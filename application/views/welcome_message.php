@@ -71,7 +71,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<h1>Welcome to CodeIgniter Adiii!</h1>
 
 	<div id="body">
-		<a href="<?= base_url('Barang') ?>" title="">Data Barang</a>
+		<li><a href="<?= base_url('Barang') ?>" title="">Data Barang</a></li>
+		<li><a href="<?= base_url('Biodata') ?>" title="">Biodata</a></li>
 	</div>
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
