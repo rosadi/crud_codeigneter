@@ -9,9 +9,10 @@
 <body>
 
     <h4>DATA BIODATA MAHASISWA</h4>
-
+    
     <a href="<?= base_url() ?>" title="">HOME</a><br><br>
-
+    
+    <u><h4><?php echo $this->session->flashdata('pesan'); ?></h4></u>
     <table border="1" cellpadding="5" cellspacing="1">
         <tr>
             <td>NO</td>

@@ -30,10 +30,10 @@
             <td>HOBI</td>
             <td></td>
             <td>
-                <input type="checkbox" name="hobi[]" value="hobi 1">HOBI 1
-                <input type="checkbox" name="hobi[]" value="hobi 2">HOBI 2
-                <input type="checkbox" name="hobi[]" value="hobi 3">HOBI 3
-                <input type="checkbox" name="hobi[]" value="hobi 4">HOBI 4
+                <input type="checkbox" name="hobi[]" value="hobi1">HOBI 1
+                <input type="checkbox" name="hobi[]" value="hobi2">HOBI 2
+                <input type="checkbox" name="hobi[]" value="hobi3">HOBI 3
+                <input type="checkbox" name="hobi[]" value="hobi4">HOBI 4
             </td>
         </tr>
         <tr>
