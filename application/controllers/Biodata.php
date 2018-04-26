@@ -60,7 +60,6 @@ class Biodata extends CI_Controller {
         $this->Model_biodata->delete_data($id);
         $this->session->set_flashdata('pesan', 'Data dengan ID ' . $id . ' telah terhapus');
         redirect(base_url('biodata'));
-        
     }
 
 

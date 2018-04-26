@@ -69,7 +69,6 @@ class Model_biodata extends CI_Model {
         return $this->db->delete('tbl_biodata', array('id' => $id));
     }
     
-
 }
 
 /* End of file Model_biodata.php */
