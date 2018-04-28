@@ -34,7 +34,7 @@
                 <?php 
                 # di hobi explode --------------------------------------------------------------------
                 $hobi = explode(", ", $data_biodata['hobi']);
-                # print_r($hobi);
+                #print_r($hobi);
                 # di hobi explode --------------------------------------------------------------------
                 ?>
                 <!-- menampilkan data checbox masih error -->
