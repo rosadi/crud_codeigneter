@@ -11,21 +11,21 @@
     <h4>Tambah Data Gambar</h4>
     <a href="<?= base_url('crud_image') ?>" title="">Back</a><br><br>
 
-    <?= form_open_multipart('crud_image/tambah') ?>
+    <div style="color: red;"><?php echo (isset($message))? $message : ""; ?></div>
+
+    <?php echo form_open("crud_image/tambah", array('enctype'=>'multipart/form-data')); ?>
 
     <table cellpadding="5" cellspacing="1">
         <tr>
-            <td>NAMA FILE</td>
-            <td>:</td>
-            <td><input type="text" name="nama_file" value="" autofocus="autofocus" ></td>
+            <td>Deskripsi</td>
+            <td><input type="text" name="input_deskripsi" value="<?php echo set_value('input_deskripsi'); ?>"></td>
         </tr>
         <tr>
-            <td>FILE</td>
-            <td>:</td>
-            <td><input type="file" name="filefoto" id="image-upload" required/></td>
+            <td>Gambar</td>
+            <td><input type="file" name="input_gambar"></td>
         </tr>
         <tr>
-            <td><input type="submit" name="save" value="SAVE"></td>
+            <td><input type="submit" name="submit" value="Simpan"></td>
         </tr>
     </table>
 
