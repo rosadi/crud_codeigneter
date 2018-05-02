@@ -18,6 +18,7 @@
             <td>NAMA GAMBAR</td>
             <td>GAMBAR</td>
             <td>UKURAN FILE</td>
+            <td>NAMA FILE</td>
             <td>TIPE FILE</td>
             <td><a href="<?= base_url('crud_image/tambah') ?>" title="">TAMBAH GAMBAR</a></td>
         </tr>
@@ -27,12 +28,13 @@
                 <td><?= $no++ ?></td>
                 <td><?= $data['id'] ?></td>
                 <td><?= $data['deskripsi'] ?></td>
-                <td><img src="<?= base_url('images/'.$data['nama_file']) ?>" width='100' height='100'></td></td>
+                <td><img src="<?= base_url('images/'.$data['nama_file']) ?>" width='100' height='100'></td>
                 <td><?= $data['ukuran_file'] ?></td>
+                <td><?= $data['nama_file'] ?></td>
                 <td><?= $data['tipe_file'] ?></td>
                 <td align="center">
                     <a href="<?= base_url('crud_image/edit/'.$data['id']) ?>" title="">EDIT</a> |
-                    <a href="" title="">DELETE</a>
+                    <a href="<?= base_url('crud_image/delete/'.$data['id']) ?>" title="">DELETE</a>
                 </td>
             </tr>
         <?php endforeach ?>
