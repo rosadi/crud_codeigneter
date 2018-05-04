@@ -57,10 +57,11 @@ class Barang extends CI_Controller {
 
     public function delete($id_barang)
     {
+        # panggil method delete barang
         $this->Model_barang->delete_barang($id_barang);
-
+        # memberikan pesan data berhasil di hapus
         $this->session->set_flashdata('pesan', 'Data ' . $id_barang . ' Telah di hapus...');
-
+        # redirect ke halaman Barang
         redirect(base_url('Barang'));
     }
 
