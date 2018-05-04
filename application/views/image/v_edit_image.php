@@ -11,7 +11,7 @@
     <h4>Tambah Data Gambar</h4>
     <a href="<?= base_url('crud_image') ?>" title="">Back</a><br><br>
 
-    <div style="color: red;"><?php echo (isset($message))? $message : ""; ?></div>
+    <h4><?php echo $this->session->flashdata('pesan'); ?></h4>
 
     <?php echo form_open("crud_image/edit/".$data_gambar['id'], array('enctype'=>'multipart/form-data')); ?>
 

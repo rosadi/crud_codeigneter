@@ -48,7 +48,19 @@ class Model_crud_image extends CI_Model {
         return $query->row_array();
     }
 
-    public function proses_update($name_file,$file_size,$file_type,$id)
+    // Fungsinya untuk meng-update deskripsi saja
+    public function proses_update_deskripsi($id)
+    {
+        $data_deskripsi = array(
+            'deskripsi'      => htmlspecialchars($this->input->POST('deskripsi')),
+        );
+        
+        $this->db->where('id', $id);
+        return $this->db->update('tbl_image', $data_deskripsi);
+    }
+
+    // fungsinya untuk meng-update deksirpsi dan data gambar juga
+    public function proses_update_gambar($name_file,$file_size,$file_type,$id)
     {
         $data = $this->upload->data();
         $data_gambar = array(
@@ -60,7 +72,11 @@ class Model_crud_image extends CI_Model {
         
         $this->db->where('id', $id);
         return $this->db->update('tbl_image', $data_gambar);
+    }
 
+    public function delete($id)
+    {
+        return $this->db->delete('tbl_image', array('id' => $id));
     }
 
 }
