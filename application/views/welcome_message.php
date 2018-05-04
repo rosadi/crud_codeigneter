@@ -74,6 +74,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<li><a href="<?= base_url('barang') ?>" title="">Data Barang</a></li>
 		<li><a href="<?= base_url('biodata') ?>" title="">Biodata</a></li>
 		<li><a href="<?= base_url('crud_image') ?>" title="">Crud Image</a></li>
+		<li><a href="<?= base_url('pagination') ?>" title="">Pagination</a></li>
 	</div>
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>

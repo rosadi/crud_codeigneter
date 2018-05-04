@@ -99,7 +99,7 @@ class Crud_image extends CI_Controller {
                     $this->Model_crud_image->proses_update_gambar($name_file,$file_size,$file_type,$id);
                     $this->session->set_flashdata('pesan', 'Data dengan ID : ' . $id . ' berhasil di update deskripsi dan gambar');
                     #redirect(base_url('crud_image'));
-                    header('refresh:2; url=http://localhost/app_ci/crud_latihan/crud_image');
+                    header('refresh:2; url=http://localhost/codeigneter/crud_latihan/crud_image');
                 }
             }
         }
